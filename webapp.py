@@ -330,7 +330,7 @@ if st.session_state.derniers_prompts_images:
     )
     if st.session_state.dernier_short:
 
-    tts = gTTS(text=st.session_state.dernier_short, lang="fr")
+        tts = gTTS(text=st.session_state.dernier_short, lang="fr")
 
     audio_buffer = BytesIO()
     tts.write_to_fp(audio_buffer)
